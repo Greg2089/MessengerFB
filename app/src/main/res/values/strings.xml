@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MessengerFB</string>
+    <string name="messenger">MESSENGER</string>
+    <string name="your_email">Your email:</string>
+    <string name="password">Password</string>
+    <string name="forgot_pass">Забыл пароль</string>
+    <string name="register">Регистрация</string>
+    <string name="login">Войти</string>
 </resources>
