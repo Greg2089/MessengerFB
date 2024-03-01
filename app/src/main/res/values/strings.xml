@@ -6,4 +6,11 @@
     <string name="forgot_pass">Забыл пароль</string>
     <string name="register">Регистрация</string>
     <string name="login">Войти</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="last_name">Last name</string>
+    <string name="how_old_are_you">How old are you?</string>
+    <string name="registration">Зарегистрироваться</string>
+    <string name="reset_password">Сбросить пароль</string>
+    <string name="forgot_password">Забыли пароль?</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.example.messengerfb;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class LoginActivity extends AppCompatActivity {
 
     private EditText editTextEmailAddress;
-    private EditText editTextTextPassword;
+    private EditText editTextPassword;
     private Button buttonLogin;
     private TextView textViewForgotPass;
     private TextView textViewRegister;
@@ -26,27 +27,32 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String email = editTextEmailAddress.getText().toString().trim();
-                String password = editTextTextPassword.getText().toString().trim();
+                String password = editTextPassword.getText().toString().trim();
                 //login
             }
         });
         textViewForgotPass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent to forgot password screen
+                Intent intent = ResetPasswordActivity.newIntent(
+                        LoginActivity.this,
+                        editTextEmailAddress.getText().toString().trim()
+                );
+                startActivity(intent);
             }
         });
         textViewRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent to forgot register screen
+                Intent intent = RegisrationActivity.newIntent(LoginActivity.this);
+                startActivity(intent);
             }
         });
     }
 
     void initViews() {
         editTextEmailAddress = findViewById(R.id.editTextEmailAddress);
-        editTextTextPassword = findViewById(R.id.editTextTextPassword);
+        editTextPassword = findViewById(R.id.editTextPassword);
         buttonLogin = findViewById(R.id.buttonLogin);
         textViewForgotPass = findViewById(R.id.textViewForgotPass);
         textViewRegister = findViewById(R.id.textViewRegister);

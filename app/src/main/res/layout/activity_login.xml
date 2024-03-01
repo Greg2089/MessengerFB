@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/your_email"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,7 +33,7 @@
         app:layout_constraintVertical_chainStyle="packed" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/editTextPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="@string/password"
@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:text="@string/login"
         app:layout_constraintBottom_toTopOf="@+id/textViewForgotPass"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
         tools:layout_editor_absoluteX="32dp" />
 
     <TextView
